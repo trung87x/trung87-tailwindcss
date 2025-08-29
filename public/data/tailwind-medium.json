@@ -1,0 +1,501 @@
+{
+  "dataset": "Tailwind CSS Utilities",
+  "level": "medium",
+  "version": "v4-compatible",
+  "updated": "2025-08-29",
+  "note": "Ví dụ class mang tính minh họa; có thể khác tùy cấu hình Tailwind.",
+  "categories": [
+    {
+      "name": "Layout",
+      "description": "Các utility bố cục tầm trung: vị trí, tràn, hiển thị, container, v.v.",
+      "items": [
+        {
+          "name": "container",
+          "desc": "Giới hạn bề rộng theo breakpoint, thường kết hợp mx-auto để căn giữa.",
+          "class_examples": [
+            "container",
+            "mx-auto",
+            "px-4"
+          ]
+        },
+        {
+          "name": "display",
+          "desc": "Kiểu hiển thị phần tử.",
+          "class_examples": [
+            "block",
+            "inline",
+            "inline-block",
+            "flex",
+            "inline-flex",
+            "grid",
+            "inline-grid",
+            "table",
+            "hidden"
+          ]
+        },
+        {
+          "name": "position",
+          "desc": "Định vị phần tử.",
+          "class_examples": [
+            "static",
+            "relative",
+            "absolute",
+            "fixed",
+            "sticky"
+          ]
+        },
+        {
+          "name": "inset (top/right/bottom/left)",
+          "desc": "Thiết lập toạ độ khi phần tử được position.",
+          "class_examples": [
+            "inset-0",
+            "top-0",
+            "right-4",
+            "bottom-2",
+            "left-1/2",
+            "-left-2",
+            "inset-x-0",
+            "inset-y-0"
+          ]
+        },
+        {
+          "name": "z-index",
+          "desc": "Thứ tự chồng lớp.",
+          "class_examples": [
+            "z-0",
+            "z-10",
+            "z-20",
+            "z-50",
+            "z-auto"
+          ]
+        },
+        {
+          "name": "overflow",
+          "desc": "Cách xử lý nội dung bị tràn.",
+          "class_examples": [
+            "overflow-hidden",
+            "overflow-auto",
+            "overflow-visible",
+            "overflow-scroll",
+            "overflow-x-auto",
+            "overflow-y-hidden"
+          ]
+        },
+        {
+          "name": "overscroll",
+          "desc": "Kiểm soát hành vi overscroll (tràn khi cuộn).",
+          "class_examples": [
+            "overscroll-auto",
+            "overscroll-contain",
+            "overscroll-none"
+          ]
+        },
+        {
+          "name": "visibility",
+          "desc": "Hiển thị/ẩn phần tử mà không ảnh hưởng layout.",
+          "class_examples": [
+            "visible",
+            "invisible",
+            "collapse"
+          ]
+        },
+        {
+          "name": "object-fit",
+          "desc": "Cách hình/iframe/video lấp đầy khung chứa.",
+          "class_examples": [
+            "object-contain",
+            "object-cover",
+            "object-fill",
+            "object-none",
+            "object-scale-down"
+          ]
+        },
+        {
+          "name": "object-position",
+          "desc": "Vị trí của nội dung media bên trong khung.",
+          "class_examples": [
+            "object-center",
+            "object-top",
+            "object-bottom",
+            "object-left",
+            "object-right",
+            "object-right-top",
+            "object-left-bottom"
+          ]
+        },
+        {
+          "name": "isolation",
+          "desc": "Tạo ngữ cảnh xếp chồng mới.",
+          "class_examples": [
+            "isolate",
+            "isolation-auto"
+          ]
+        },
+        {
+          "name": "float",
+          "desc": "Thả nổi phần tử (truyền thống).",
+          "class_examples": [
+            "float-left",
+            "float-right",
+            "float-none"
+          ]
+        },
+        {
+          "name": "clear",
+          "desc": "Kiểm soát dọn chỗ cho float.",
+          "class_examples": [
+            "clear-left",
+            "clear-right",
+            "clear-both",
+            "clear-none"
+          ]
+        },
+        {
+          "name": "box-sizing",
+          "desc": "Cách tính kích thước phần tử.",
+          "class_examples": [
+            "box-border",
+            "box-content"
+          ]
+        },
+        {
+          "name": "breakpoints",
+          "desc": "Prefix responsive theo kích thước màn hình.",
+          "class_examples": [
+            "sm:hidden",
+            "md:w-1/2",
+            "lg:grid-cols-3",
+            "xl:p-8",
+            "2xl:container"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flexbox",
+      "description": "Bố cục một chiều, co giãn theo trục chính/phụ.",
+      "items": [
+        {
+          "name": "display (activate flex)",
+          "desc": "Kích hoạt flexbox.",
+          "class_examples": [
+            "flex",
+            "inline-flex"
+          ]
+        },
+        {
+          "name": "flex-direction",
+          "desc": "Hướng trục chính.",
+          "class_examples": [
+            "flex-row",
+            "flex-row-reverse",
+            "flex-col",
+            "flex-col-reverse"
+          ]
+        },
+        {
+          "name": "flex-wrap",
+          "desc": "Quấn dòng khi thiếu chỗ.",
+          "class_examples": [
+            "flex-wrap",
+            "flex-wrap-reverse",
+            "flex-nowrap"
+          ]
+        },
+        {
+          "name": "flex (shorthand)",
+          "desc": "Thiết lập grow/shrink/basis tắt.",
+          "class_examples": [
+            "flex-1",
+            "flex-auto",
+            "flex-initial",
+            "flex-none"
+          ]
+        },
+        {
+          "name": "flex-grow",
+          "desc": "Cho phép phần tử nở ra chiếm chỗ trống.",
+          "class_examples": [
+            "grow",
+            "grow-0"
+          ]
+        },
+        {
+          "name": "flex-shrink",
+          "desc": "Cho phép phần tử co lại khi thiếu chỗ.",
+          "class_examples": [
+            "shrink",
+            "shrink-0"
+          ]
+        },
+        {
+          "name": "order",
+          "desc": "Thứ tự hiển thị phần tử trong flex/grid.",
+          "class_examples": [
+            "order-1",
+            "order-2",
+            "order-first",
+            "order-last",
+            "order-none"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Grid",
+      "description": "Bố cục hai chiều với cột/hàng và auto placement.",
+      "items": [
+        {
+          "name": "grid-template-columns",
+          "desc": "Số cột trong grid.",
+          "class_examples": [
+            "grid-cols-1",
+            "grid-cols-2",
+            "grid-cols-3",
+            "grid-cols-12",
+            "grid-cols-none"
+          ]
+        },
+        {
+          "name": "grid-template-rows",
+          "desc": "Số hàng trong grid.",
+          "class_examples": [
+            "grid-rows-1",
+            "grid-rows-2",
+            "grid-rows-6",
+            "grid-rows-none"
+          ]
+        },
+        {
+          "name": "grid-column (start/end/span)",
+          "desc": "Vị trí/độ rộng cột của item.",
+          "class_examples": [
+            "col-span-6",
+            "col-start-2",
+            "col-end-7",
+            "col-auto"
+          ]
+        },
+        {
+          "name": "grid-row (start/end/span)",
+          "desc": "Vị trí/độ cao hàng của item.",
+          "class_examples": [
+            "row-span-2",
+            "row-start-1",
+            "row-end-4",
+            "row-auto"
+          ]
+        },
+        {
+          "name": "grid-auto-flow",
+          "desc": "Chiến lược đặt item tự động.",
+          "class_examples": [
+            "grid-flow-row",
+            "grid-flow-col",
+            "grid-flow-row-dense",
+            "grid-flow-col-dense"
+          ]
+        },
+        {
+          "name": "grid-auto-columns",
+          "desc": "Kích thước cột tự sinh.",
+          "class_examples": [
+            "auto-cols-auto",
+            "auto-cols-min",
+            "auto-cols-max",
+            "auto-cols-fr"
+          ]
+        },
+        {
+          "name": "grid-auto-rows",
+          "desc": "Kích thước hàng tự sinh.",
+          "class_examples": [
+            "auto-rows-auto",
+            "auto-rows-min",
+            "auto-rows-max",
+            "auto-rows-fr"
+          ]
+        },
+        {
+          "name": "gap",
+          "desc": "Khoảng cách giữa hàng/cột.",
+          "class_examples": [
+            "gap-2",
+            "gap-4",
+            "gap-x-6",
+            "gap-y-3"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Box Alignment",
+      "description": "Căn chỉnh dọc/ngang cho flex/grid (container & item).",
+      "items": [
+        {
+          "name": "justify-content",
+          "desc": "Căn chỉnh theo trục chính (container).",
+          "class_examples": [
+            "justify-start",
+            "justify-center",
+            "justify-end",
+            "justify-between",
+            "justify-around",
+            "justify-evenly"
+          ]
+        },
+        {
+          "name": "justify-items (grid)",
+          "desc": "Căn item theo trục ngang trong grid container.",
+          "class_examples": [
+            "justify-items-start",
+            "justify-items-center",
+            "justify-items-end",
+            "justify-items-stretch"
+          ]
+        },
+        {
+          "name": "justify-self (grid)",
+          "desc": "Căn riêng lẻ từng item theo trục ngang.",
+          "class_examples": [
+            "justify-self-auto",
+            "justify-self-start",
+            "justify-self-center",
+            "justify-self-end",
+            "justify-self-stretch"
+          ]
+        },
+        {
+          "name": "align-content",
+          "desc": "Căn chỉnh hàng theo trục chéo (container).",
+          "class_examples": [
+            "content-start",
+            "content-center",
+            "content-end",
+            "content-between",
+            "content-around",
+            "content-evenly"
+          ]
+        },
+        {
+          "name": "align-items",
+          "desc": "Căn chỉnh item theo trục phụ (container).",
+          "class_examples": [
+            "items-start",
+            "items-center",
+            "items-end",
+            "items-baseline",
+            "items-stretch"
+          ]
+        },
+        {
+          "name": "align-self",
+          "desc": "Ghi đè căn chỉnh cho từng item.",
+          "class_examples": [
+            "self-auto",
+            "self-start",
+            "self-center",
+            "self-end",
+            "self-stretch"
+          ]
+        },
+        {
+          "name": "place-content",
+          "desc": "Shorthand cho align-content + justify-content.",
+          "class_examples": [
+            "place-content-center",
+            "place-content-start",
+            "place-content-end",
+            "place-content-between",
+            "place-content-around",
+            "place-content-evenly",
+            "place-content-stretch"
+          ]
+        },
+        {
+          "name": "place-items",
+          "desc": "Shorthand cho align-items + justify-items.",
+          "class_examples": [
+            "place-items-center",
+            "place-items-start",
+            "place-items-end",
+            "place-items-stretch"
+          ]
+        },
+        {
+          "name": "place-self",
+          "desc": "Shorthand cho align-self + justify-self.",
+          "class_examples": [
+            "place-self-auto",
+            "place-self-start",
+            "place-self-center",
+            "place-self-end",
+            "place-self-stretch"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Effects",
+      "description": "Hiệu ứng trực quan nhẹ nhàng cho UI.",
+      "items": [
+        {
+          "name": "box-shadow",
+          "desc": "Đổ bóng phần tử.",
+          "class_examples": [
+            "shadow",
+            "shadow-sm",
+            "shadow-md",
+            "shadow-lg",
+            "shadow-xl",
+            "shadow-2xl",
+            "shadow-inner",
+            "shadow-none"
+          ]
+        },
+        {
+          "name": "opacity",
+          "desc": "Độ mờ phần tử.",
+          "class_examples": [
+            "opacity-0",
+            "opacity-25",
+            "opacity-50",
+            "opacity-75",
+            "opacity-100"
+          ]
+        },
+        {
+          "name": "mix-blend-mode",
+          "desc": "Cách trộn màu phần tử với nền phía sau.",
+          "class_examples": [
+            "mix-blend-normal",
+            "mix-blend-multiply",
+            "mix-blend-screen",
+            "mix-blend-overlay",
+            "mix-blend-darken",
+            "mix-blend-lighten",
+            "mix-blend-difference",
+            "mix-blend-color-dodge",
+            "mix-blend-color-burn"
+          ]
+        },
+        {
+          "name": "background-blend-mode",
+          "desc": "Cách trộn nhiều lớp nền với nhau.",
+          "class_examples": [
+            "bg-blend-normal",
+            "bg-blend-multiply",
+            "bg-blend-screen",
+            "bg-blend-overlay",
+            "bg-blend-darken",
+            "bg-blend-lighten",
+            "bg-blend-difference",
+            "bg-blend-saturation",
+            "bg-blend-color",
+            "bg-blend-luminosity"
+          ]
+        }
+      ]
+    }
+  ]
+}

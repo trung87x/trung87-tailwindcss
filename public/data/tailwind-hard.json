@@ -1,0 +1,241 @@
+{
+  "dataset": "Tailwind CSS Utilities",
+  "level": "hard",
+  "version": "v4-compatible",
+  "updated": "2025-08-29",
+  "note": "Ví dụ class mang tính minh họa; có thể khác tùy cấu hình Tailwind.",
+  "categories": [
+    {
+      "name": "Tables",
+      "description": "Các utility cho bảng biểu, tối ưu hiển thị ô/viền.",
+      "items": [
+        {
+          "name": "border-collapse",
+          "desc": "Gộp hay tách viền ô bảng.",
+          "class_examples": [
+            "border-collapse",
+            "border-separate"
+          ]
+        },
+        {
+          "name": "table-layout",
+          "desc": "Chiến lược bố cục bảng (tự động hay cố định).",
+          "class_examples": [
+            "table-auto",
+            "table-fixed"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Transforms",
+      "description": "Biến đổi hình học phần tử: tỉ lệ, quay, tịnh tiến, nghiêng; kèm origin và bật/tắt transform.",
+      "items": [
+        {
+          "name": "scale",
+          "desc": "Phóng to/thu nhỏ theo trục X/Y hoặc đồng thời.",
+          "class_examples": [
+            "scale-0",
+            "scale-50",
+            "scale-100",
+            "scale-110",
+            "scale-x-125",
+            "scale-y-75",
+            "hover:scale-105"
+          ]
+        },
+        {
+          "name": "rotate",
+          "desc": "Xoay phần tử theo độ.",
+          "class_examples": [
+            "-rotate-6",
+            "rotate-0",
+            "rotate-45",
+            "rotate-90",
+            "lg:rotate-180"
+          ]
+        },
+        {
+          "name": "translate",
+          "desc": "Tịnh tiến theo trục X/Y.",
+          "class_examples": [
+            "translate-x-1",
+            "-translate-y-1/2",
+            "translate-x-full",
+            "hover:translate-y-1"
+          ]
+        },
+        {
+          "name": "skew",
+          "desc": "Nghiêng phần tử theo trục X/Y.",
+          "class_examples": [
+            "skew-x-6",
+            "-skew-y-3",
+            "md:skew-x-12"
+          ]
+        },
+        {
+          "name": "transform-origin",
+          "desc": "Điểm làm gốc cho biến đổi.",
+          "class_examples": [
+            "origin-center",
+            "origin-top",
+            "origin-bottom",
+            "origin-left",
+            "origin-right",
+            "origin-top-right"
+          ]
+        },
+        {
+          "name": "transform",
+          "desc": "Bật/tắt áp dụng transform (ít khi cần chỉnh trực tiếp).",
+          "class_examples": [
+            "transform",
+            "transform-gpu",
+            "transform-none"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Transitions and Animation",
+      "description": "Hiệu ứng chuyển cảnh và chuyển động.",
+      "items": [
+        {
+          "name": "transition-property",
+          "desc": "Chọn thuộc tính cần transition.",
+          "class_examples": [
+            "transition-none",
+            "transition",
+            "transition-colors",
+            "transition-opacity",
+            "transition-shadow",
+            "transition-transform"
+          ]
+        },
+        {
+          "name": "transition-duration",
+          "desc": "Thời lượng chuyển cảnh.",
+          "class_examples": [
+            "duration-75",
+            "duration-150",
+            "duration-300",
+            "duration-500",
+            "duration-700"
+          ]
+        },
+        {
+          "name": "transition-timing-function",
+          "desc": "Hàm thời gian (easing).",
+          "class_examples": [
+            "ease-linear",
+            "ease-in",
+            "ease-out",
+            "ease-in-out"
+          ]
+        },
+        {
+          "name": "transition-delay",
+          "desc": "Độ trễ trước khi chạy transition.",
+          "class_examples": [
+            "delay-0",
+            "delay-75",
+            "delay-150",
+            "delay-300",
+            "delay-500"
+          ]
+        },
+        {
+          "name": "animation",
+          "desc": "Các animation dựng sẵn; có thể thêm @keyframes tùy biến.",
+          "class_examples": [
+            "animate-none",
+            "animate-spin",
+            "animate-ping",
+            "animate-pulse",
+            "animate-bounce",
+            "motion-safe:animate-spin",
+            "motion-reduce:animate-none"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interactivity",
+      "description": "Tương tác người dùng & khả năng truy cập.",
+      "items": [
+        {
+          "name": "cursor",
+          "desc": "Đổi kiểu con trỏ khi hover/active.",
+          "class_examples": [
+            "cursor-auto",
+            "cursor-default",
+            "cursor-pointer",
+            "cursor-text",
+            "cursor-move",
+            "cursor-not-allowed",
+            "cursor-wait",
+            "cursor-crosshair",
+            "cursor-zoom-in",
+            "cursor-zoom-out"
+          ]
+        },
+        {
+          "name": "resize",
+          "desc": "Cho phép kéo thay đổi kích thước phần tử (thường là textarea/div).",
+          "class_examples": [
+            "resize-none",
+            "resize",
+            "resize-x",
+            "resize-y"
+          ]
+        },
+        {
+          "name": "user-select",
+          "desc": "Cho phép/bỏ chọn văn bản.",
+          "class_examples": [
+            "select-none",
+            "select-text",
+            "select-all",
+            "select-auto"
+          ]
+        },
+        {
+          "name": "pointer-events",
+          "desc": "Bật/tắt tương tác chuột (click/hover).",
+          "class_examples": [
+            "pointer-events-none",
+            "pointer-events-auto"
+          ]
+        },
+        {
+          "name": "outline",
+          "desc": "Tùy biến đường viền outline (thường dùng khi focus).",
+          "class_examples": [
+            "outline-none",
+            "outline",
+            "outline-2",
+            "outline-offset-2",
+            "outline-blue-500"
+          ]
+        },
+        {
+          "name": "appearance",
+          "desc": "Loại bỏ style mặc định của control hệ thống.",
+          "class_examples": [
+            "appearance-none"
+          ]
+        },
+        {
+          "name": "accessibility",
+          "desc": "Ẩn phần tử với thị giác nhưng vẫn đọc được bởi screen reader.",
+          "class_examples": [
+            "sr-only",
+            "not-sr-only",
+            "focus:not-sr-only"
+          ]
+        }
+      ]
+    }
+  ]
+}

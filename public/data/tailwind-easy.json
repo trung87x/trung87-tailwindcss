@@ -1,0 +1,581 @@
+{
+  "dataset": "Tailwind CSS Utilities",
+  "level": "easy",
+  "version": "v4-compatible",
+  "updated": "2025-08-29",
+  "note": "Các ví dụ class là đại diện; có thể thay đổi tùy cấu hình Tailwind của dự án.",
+  "categories": [
+    {
+      "name": "Spacing",
+      "description": "Khoảng cách trong/ngoài phần tử và khoảng cách giữa các phần tử con.",
+      "items": [
+        {
+          "name": "padding",
+          "desc": "Khoảng cách bên trong phần tử.",
+          "class_examples": [
+            "p-4",
+            "px-6",
+            "py-2",
+            "pt-4",
+            "pr-3",
+            "pb-1",
+            "pl-2"
+          ]
+        },
+        {
+          "name": "margin",
+          "desc": "Khoảng cách bên ngoài phần tử.",
+          "class_examples": [
+            "m-4",
+            "mx-auto",
+            "my-2",
+            "mt-6",
+            "mr-3",
+            "mb-2",
+            "ml-1",
+            "-mt-2"
+          ]
+        },
+        {
+          "name": "space between",
+          "desc": "Khoảng cách giữa các phần tử con trực tiếp trong flex/grid.",
+          "class_examples": [
+            "space-x-4",
+            "space-y-2",
+            "-space-x-1",
+            "space-x-reverse"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Sizing",
+      "description": "Kích thước rộng/cao và giới hạn min/max.",
+      "items": [
+        {
+          "name": "width",
+          "desc": "Chiều rộng phần tử.",
+          "class_examples": [
+            "w-64",
+            "w-full",
+            "w-screen",
+            "w-min",
+            "w-max",
+            "w-[42rem]"
+          ]
+        },
+        {
+          "name": "min-width",
+          "desc": "Giới hạn chiều rộng tối thiểu.",
+          "class_examples": [
+            "min-w-0",
+            "min-w-full",
+            "min-w-[12rem]"
+          ]
+        },
+        {
+          "name": "max-width",
+          "desc": "Giới hạn chiều rộng tối đa.",
+          "class_examples": [
+            "max-w-sm",
+            "max-w-2xl",
+            "max-w-none",
+            "max-w-screen-lg"
+          ]
+        },
+        {
+          "name": "height",
+          "desc": "Chiều cao phần tử.",
+          "class_examples": [
+            "h-10",
+            "h-full",
+            "h-screen",
+            "h-min",
+            "h-max",
+            "h-[30vh]"
+          ]
+        },
+        {
+          "name": "min-height",
+          "desc": "Giới hạn chiều cao tối thiểu.",
+          "class_examples": [
+            "min-h-0",
+            "min-h-screen",
+            "min-h-[200px]"
+          ]
+        },
+        {
+          "name": "max-height",
+          "desc": "Giới hạn chiều cao tối đa.",
+          "class_examples": [
+            "max-h-40",
+            "max-h-screen",
+            "max-h-[60vh]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "description": "Kiểu chữ và cách hiển thị văn bản.",
+      "items": [
+        {
+          "name": "text color",
+          "desc": "Màu chữ.",
+          "class_examples": [
+            "text-slate-900",
+            "text-red-600",
+            "text-emerald-500",
+            "text-blue-500/80"
+          ]
+        },
+        {
+          "name": "text opacity",
+          "desc": "Độ mờ của chữ (dùng modifier hoặc slash opacity).",
+          "class_examples": [
+            "text-black/60",
+            "text-white/80"
+          ]
+        },
+        {
+          "name": "font-family",
+          "desc": "Bộ font.",
+          "class_examples": [
+            "font-sans",
+            "font-serif",
+            "font-mono"
+          ]
+        },
+        {
+          "name": "font-size",
+          "desc": "Cỡ chữ.",
+          "class_examples": [
+            "text-xs",
+            "text-sm",
+            "text-base",
+            "text-lg",
+            "text-xl",
+            "text-2xl"
+          ]
+        },
+        {
+          "name": "font-smoothing",
+          "desc": "Làm mịn font chữ (macOS chủ yếu).",
+          "class_examples": [
+            "antialiased",
+            "subpixel-antialiased"
+          ]
+        },
+        {
+          "name": "font-style",
+          "desc": "Kiểu chữ nghiêng/không nghiêng.",
+          "class_examples": [
+            "italic",
+            "not-italic"
+          ]
+        },
+        {
+          "name": "font-weight",
+          "desc": "Độ đậm nhạt.",
+          "class_examples": [
+            "font-light",
+            "font-normal",
+            "font-medium",
+            "font-semibold",
+            "font-bold",
+            "font-black"
+          ]
+        },
+        {
+          "name": "font-variant-numeric",
+          "desc": "Kiểu chữ số và dạng thức số.",
+          "class_examples": [
+            "oldstyle-nums",
+            "lining-nums",
+            "tabular-nums",
+            "proportional-nums",
+            "slashed-zero",
+            "ordinal",
+            "diagonal-fractions"
+          ]
+        },
+        {
+          "name": "letter-spacing",
+          "desc": "Giãn chữ.",
+          "class_examples": [
+            "tracking-tighter",
+            "tracking-tight",
+            "tracking-normal",
+            "tracking-wide",
+            "tracking-wider",
+            "tracking-widest"
+          ]
+        },
+        {
+          "name": "line-height",
+          "desc": "Khoảng cách dòng.",
+          "class_examples": [
+            "leading-none",
+            "leading-tight",
+            "leading-snug",
+            "leading-normal",
+            "leading-relaxed",
+            "leading-loose"
+          ]
+        },
+        {
+          "name": "list-style-type",
+          "desc": "Kiểu bullet/number của danh sách.",
+          "class_examples": [
+            "list-none",
+            "list-disc",
+            "list-decimal"
+          ]
+        },
+        {
+          "name": "list-style-position",
+          "desc": "Vị trí bullet/number.",
+          "class_examples": [
+            "list-inside",
+            "list-outside"
+          ]
+        },
+        {
+          "name": "::placeholder color",
+          "desc": "Màu placeholder của input/textarea.",
+          "class_examples": [
+            "placeholder:text-slate-400",
+            "placeholder:text-red-400"
+          ]
+        },
+        {
+          "name": "::placeholder opacity",
+          "desc": "Độ mờ placeholder.",
+          "class_examples": [
+            "placeholder:opacity-50",
+            "placeholder:opacity-80"
+          ]
+        },
+        {
+          "name": "text-align",
+          "desc": "Căn lề văn bản.",
+          "class_examples": [
+            "text-left",
+            "text-center",
+            "text-right",
+            "text-justify"
+          ]
+        },
+        {
+          "name": "text-decoration",
+          "desc": "Trang trí văn bản (gạch chân, kiểu nét, màu, độ dày).",
+          "class_examples": [
+            "underline",
+            "overline",
+            "line-through",
+            "no-underline",
+            "decoration-dashed",
+            "decoration-4",
+            "decoration-red-500"
+          ]
+        },
+        {
+          "name": "text-transform",
+          "desc": "Hoa/thường/chữ cái đầu.",
+          "class_examples": [
+            "uppercase",
+            "lowercase",
+            "capitalize",
+            "normal-case"
+          ]
+        },
+        {
+          "name": "text-overflow",
+          "desc": "Xử lý khi text tràn.",
+          "class_examples": [
+            "truncate",
+            "text-ellipsis",
+            "text-clip"
+          ]
+        },
+        {
+          "name": "vertical-align",
+          "desc": "Căn dọc cho inline/inline-block/table-cell.",
+          "class_examples": [
+            "align-baseline",
+            "align-top",
+            "align-middle",
+            "align-bottom",
+            "align-text-top",
+            "align-text-bottom"
+          ]
+        },
+        {
+          "name": "white-space",
+          "desc": "Xử lý khoảng trắng và xuống dòng.",
+          "class_examples": [
+            "whitespace-normal",
+            "whitespace-nowrap",
+            "whitespace-pre",
+            "whitespace-pre-line",
+            "whitespace-pre-wrap"
+          ]
+        },
+        {
+          "name": "word-break",
+          "desc": "Ngắt từ khi tràn.",
+          "class_examples": [
+            "break-normal",
+            "break-words",
+            "break-all"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Backgrounds",
+      "description": "Màu nền, ảnh nền, cách lặp/kích thước/vị trí và gradient.",
+      "items": [
+        {
+          "name": "background-attachment",
+          "desc": "Cách cuộn nền.",
+          "class_examples": [
+            "bg-fixed",
+            "bg-local",
+            "bg-scroll"
+          ]
+        },
+        {
+          "name": "background-clip",
+          "desc": "Phạm vi vẽ nền.",
+          "class_examples": [
+            "bg-clip-border",
+            "bg-clip-padding",
+            "bg-clip-content",
+            "bg-clip-text"
+          ]
+        },
+        {
+          "name": "background-color",
+          "desc": "Màu nền.",
+          "class_examples": [
+            "bg-white",
+            "bg-slate-100",
+            "bg-red-500",
+            "bg-emerald-500"
+          ]
+        },
+        {
+          "name": "background opacity",
+          "desc": "Độ mờ màu nền (qua slash opacity).",
+          "class_examples": [
+            "bg-black/20",
+            "bg-blue-500/60"
+          ]
+        },
+        {
+          "name": "background origin",
+          "desc": "Gốc tính toán vị trí nền.",
+          "class_examples": [
+            "bg-origin-border",
+            "bg-origin-padding",
+            "bg-origin-content"
+          ]
+        },
+        {
+          "name": "background-position",
+          "desc": "Vị trí ảnh nền.",
+          "class_examples": [
+            "bg-center",
+            "bg-top",
+            "bg-bottom",
+            "bg-left",
+            "bg-right",
+            "bg-right-top",
+            "bg-left-bottom"
+          ]
+        },
+        {
+          "name": "background-repeat",
+          "desc": "Lặp ảnh nền.",
+          "class_examples": [
+            "bg-repeat",
+            "bg-no-repeat",
+            "bg-repeat-x",
+            "bg-repeat-y",
+            "bg-repeat-round",
+            "bg-repeat-space"
+          ]
+        },
+        {
+          "name": "background-size",
+          "desc": "Kích thước ảnh nền.",
+          "class_examples": [
+            "bg-cover",
+            "bg-contain",
+            "bg-auto"
+          ]
+        },
+        {
+          "name": "background-image",
+          "desc": "Ảnh nền hoặc gradient.",
+          "class_examples": [
+            "bg-none",
+            "bg-[url('/img/hero.png')]",
+            "bg-gradient-to-r"
+          ]
+        },
+        {
+          "name": "gradient color",
+          "desc": "Màu cho gradient tuyến tính.",
+          "class_examples": [
+            "from-indigo-500",
+            "via-purple-500",
+            "to-pink-500"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Borders",
+      "description": "Đường viền, bán kính bo góc, divide và ring.",
+      "items": [
+        {
+          "name": "border-radius",
+          "desc": "Bo góc phần tử.",
+          "class_examples": [
+            "rounded-none",
+            "rounded",
+            "rounded-md",
+            "rounded-lg",
+            "rounded-full",
+            "rounded-t-2xl"
+          ]
+        },
+        {
+          "name": "border-width",
+          "desc": "Độ dày viền.",
+          "class_examples": [
+            "border-0",
+            "border",
+            "border-2",
+            "border-4",
+            "border-t",
+            "border-x-0"
+          ]
+        },
+        {
+          "name": "border-color",
+          "desc": "Màu viền.",
+          "class_examples": [
+            "border-slate-200",
+            "border-gray-300",
+            "border-red-500"
+          ]
+        },
+        {
+          "name": "border opacity",
+          "desc": "Độ mờ màu viền (qua slash opacity).",
+          "class_examples": [
+            "border-red-500/50",
+            "border-black/10"
+          ]
+        },
+        {
+          "name": "border-style",
+          "desc": "Kiểu nét viền.",
+          "class_examples": [
+            "border-solid",
+            "border-dashed",
+            "border-dotted",
+            "border-double",
+            "border-none"
+          ]
+        },
+        {
+          "name": "divide width",
+          "desc": "Viền phân cách giữa các phần tử con.",
+          "class_examples": [
+            "divide-y",
+            "divide-x",
+            "divide-y-2",
+            "divide-x-0"
+          ]
+        },
+        {
+          "name": "divide color",
+          "desc": "Màu đường phân cách.",
+          "class_examples": [
+            "divide-gray-200",
+            "divide-slate-300",
+            "divide-red-500"
+          ]
+        },
+        {
+          "name": "divide opacity",
+          "desc": "Độ mờ đường phân cách (qua slash opacity).",
+          "class_examples": [
+            "divide-gray-400/50",
+            "divide-black/10"
+          ]
+        },
+        {
+          "name": "divide style",
+          "desc": "Kiểu nét đường phân cách.",
+          "class_examples": [
+            "divide-solid",
+            "divide-dashed",
+            "divide-dotted"
+          ]
+        },
+        {
+          "name": "ring width",
+          "desc": "Độ dày vòng sáng (focus ring).",
+          "class_examples": [
+            "ring-0",
+            "ring",
+            "ring-2",
+            "ring-4",
+            "ring-inset"
+          ]
+        },
+        {
+          "name": "ring color",
+          "desc": "Màu vòng sáng.",
+          "class_examples": [
+            "ring-blue-500",
+            "ring-slate-300",
+            "ring-rose-500"
+          ]
+        },
+        {
+          "name": "ring opacity",
+          "desc": "Độ mờ màu vòng sáng (qua slash opacity).",
+          "class_examples": [
+            "ring-blue-500/50",
+            "ring-black/10"
+          ]
+        },
+        {
+          "name": "ring offset width",
+          "desc": "Độ dày khoảng đệm của ring.",
+          "class_examples": [
+            "ring-offset-0",
+            "ring-offset",
+            "ring-offset-2",
+            "ring-offset-4"
+          ]
+        },
+        {
+          "name": "ring offset color",
+          "desc": "Màu khoảng đệm của ring.",
+          "class_examples": [
+            "ring-offset-white",
+            "ring-offset-slate-50",
+            "ring-offset-black"
+          ]
+        }
+      ]
+    }
+  ]
+}

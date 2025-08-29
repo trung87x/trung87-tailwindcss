@@ -1,24 +1,60 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+// Dark mode (nút)
+import { mountThemeToggle } from "./features/theme-toggle.js";
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// Data
+import { loadData, normalize } from "./data/data.js";
 
-setupCounter(document.querySelector('#counter'))
+// Renderers
+import { renderLevelFilters } from "./render/filters.js";
+import { renderContent } from "./render/content.js";
+import { renderToC } from "./render/toc.js";
+
+// Features
+import { bindSearch } from "./features/search.js";
+import { exportFiltered } from "./features/export-json.js";
+import { bindDrawer } from "./features/drawer.js";
+
+// Utils
+import { $ } from "./utils/dom.js";
+
+// --------- App State ---------
+const STATE = {
+  search: "",
+  levels: new Set(["easy", "medium", "hard", "very-hard"]),
+};
+
+let CATEGORIES = [];
+
+function renderAll() {
+  renderContent($("#content"), CATEGORIES, STATE);
+}
+
+// --------- Boot ---------
+(async function boot() {
+  // Year
+  $("#year").textContent = new Date().getFullYear();
+
+  // Data
+  const ds = await loadData();
+  CATEGORIES = normalize(ds);
+
+  // UI mounts
+  renderLevelFilters($("#levelFilters"), STATE, renderAll);
+  renderLevelFilters($("#levelFiltersMobile"), STATE, renderAll);
+  renderToC($("#toc"), $("#tocMobile"), CATEGORIES);
+  renderAll();
+
+  // Search
+  bindSearch(STATE, renderAll);
+
+  // Export
+  $("#exportBtn").addEventListener("click", () =>
+    exportFiltered(CATEGORIES, STATE)
+  );
+
+  // Drawer (mobile)
+  bindDrawer();
+
+  // Theme toggle (nút)
+  mountThemeToggle();
+})();

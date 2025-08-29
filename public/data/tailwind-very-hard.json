@@ -1,0 +1,261 @@
+{
+  "dataset": "Tailwind CSS Utilities",
+  "level": "very-hard",
+  "version": "v4-compatible",
+  "updated": "2025-08-29",
+  "note": "Nhóm nâng cao cho UI đặc biệt. Ví dụ class mang tính minh họa; có thể khác tùy cấu hình Tailwind.",
+  "categories": [
+    {
+      "name": "SVG",
+      "description": "Tô màu và điều khiển đường nét cho icon/đồ họa vector SVG.",
+      "items": [
+        {
+          "name": "fill",
+          "desc": "Màu tô vùng (fill) của SVG.",
+          "class_examples": [
+            "fill-current",
+            "fill-black",
+            "fill-white",
+            "fill-slate-500",
+            "hover:fill-emerald-500"
+          ]
+        },
+        {
+          "name": "stroke",
+          "desc": "Màu nét (stroke) của SVG.",
+          "class_examples": [
+            "stroke-current",
+            "stroke-slate-600",
+            "stroke-red-500",
+            "hover:stroke-blue-500"
+          ]
+        },
+        {
+          "name": "stroke-width",
+          "desc": "Độ dày nét (stroke-width).",
+          "class_examples": [
+            "stroke-0",
+            "stroke-1",
+            "stroke-2",
+            "stroke-[3]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Filter",
+      "description": "Hiệu ứng bộ lọc cho phần tử và các biến thể backdop-* (làm mờ/phối màu nền phía sau).",
+      "items": [
+        {
+          "name": "filter",
+          "desc": "Bật/tắt filter tổng.",
+          "class_examples": [
+            "filter",
+            "filter-none"
+          ]
+        },
+        {
+          "name": "blur",
+          "desc": "Làm mờ phần tử.",
+          "class_examples": [
+            "blur-none",
+            "blur-sm",
+            "blur",
+            "blur-md",
+            "blur-lg",
+            "blur-xl",
+            "blur-2xl",
+            "blur-3xl"
+          ]
+        },
+        {
+          "name": "brightness",
+          "desc": "Độ sáng.",
+          "class_examples": [
+            "brightness-50",
+            "brightness-75",
+            "brightness-100",
+            "brightness-110",
+            "brightness-125",
+            "brightness-150",
+            "brightness-200"
+          ]
+        },
+        {
+          "name": "contrast",
+          "desc": "Độ tương phản.",
+          "class_examples": [
+            "contrast-0",
+            "contrast-50",
+            "contrast-100",
+            "contrast-125",
+            "contrast-150",
+            "contrast-200"
+          ]
+        },
+        {
+          "name": "drop-shadow",
+          "desc": "Bóng đổ kiểu filter (khác với box-shadow).",
+          "class_examples": [
+            "drop-shadow",
+            "drop-shadow-sm",
+            "drop-shadow-md",
+            "drop-shadow-lg",
+            "drop-shadow-xl",
+            "drop-shadow-2xl",
+            "drop-shadow-none"
+          ]
+        },
+        {
+          "name": "grayscale",
+          "desc": "Chuyển sang xám.",
+          "class_examples": [
+            "grayscale",
+            "grayscale-0"
+          ]
+        },
+        {
+          "name": "hue-rotate",
+          "desc": "Xoay vòng màu (độ).",
+          "class_examples": [
+            "hue-rotate-0",
+            "hue-rotate-15",
+            "hue-rotate-30",
+            "hue-rotate-60",
+            "hue-rotate-90",
+            "hue-rotate-180"
+          ]
+        },
+        {
+          "name": "invert",
+          "desc": "Đảo ngược màu.",
+          "class_examples": [
+            "invert",
+            "invert-0"
+          ]
+        },
+        {
+          "name": "saturate",
+          "desc": "Độ bão hòa.",
+          "class_examples": [
+            "saturate-0",
+            "saturate-50",
+            "saturate-100",
+            "saturate-150",
+            "saturate-200"
+          ]
+        },
+        {
+          "name": "sepia",
+          "desc": "Hiệu ứng ảnh cũ nâu đỏ.",
+          "class_examples": [
+            "sepia",
+            "sepia-0"
+          ]
+        },
+        {
+          "name": "backdrop-filter",
+          "desc": "Bật/tắt nhóm hiệu ứng backdrop-* (tác động nền phía sau phần tử).",
+          "class_examples": [
+            "backdrop-filter",
+            "backdrop-filter-none"
+          ]
+        },
+        {
+          "name": "backdrop-blur",
+          "desc": "Làm mờ nền phía sau.",
+          "class_examples": [
+            "backdrop-blur-none",
+            "backdrop-blur-sm",
+            "backdrop-blur",
+            "backdrop-blur-md",
+            "backdrop-blur-lg",
+            "backdrop-blur-xl",
+            "backdrop-blur-2xl"
+          ]
+        },
+        {
+          "name": "backdrop-brightness",
+          "desc": "Độ sáng nền phía sau.",
+          "class_examples": [
+            "backdrop-brightness-50",
+            "backdrop-brightness-75",
+            "backdrop-brightness-100",
+            "backdrop-brightness-125",
+            "backdrop-brightness-150"
+          ]
+        },
+        {
+          "name": "backdrop-contrast",
+          "desc": "Độ tương phản nền phía sau.",
+          "class_examples": [
+            "backdrop-contrast-0",
+            "backdrop-contrast-50",
+            "backdrop-contrast-100",
+            "backdrop-contrast-125",
+            "backdrop-contrast-150",
+            "backdrop-contrast-200"
+          ]
+        },
+        {
+          "name": "backdrop-grayscale",
+          "desc": "Độ xám nền phía sau.",
+          "class_examples": [
+            "backdrop-grayscale",
+            "backdrop-grayscale-0"
+          ]
+        },
+        {
+          "name": "backdrop-hue-rotate",
+          "desc": "Xoay vòng màu nền phía sau.",
+          "class_examples": [
+            "backdrop-hue-rotate-0",
+            "backdrop-hue-rotate-15",
+            "backdrop-hue-rotate-30",
+            "backdrop-hue-rotate-60",
+            "backdrop-hue-rotate-90",
+            "backdrop-hue-rotate-180"
+          ]
+        },
+        {
+          "name": "backdrop-invert",
+          "desc": "Đảo màu nền phía sau.",
+          "class_examples": [
+            "backdrop-invert",
+            "backdrop-invert-0"
+          ]
+        },
+        {
+          "name": "backdrop-opacity",
+          "desc": "Độ mờ nền phía sau.",
+          "class_examples": [
+            "backdrop-opacity-0",
+            "backdrop-opacity-25",
+            "backdrop-opacity-50",
+            "backdrop-opacity-75",
+            "backdrop-opacity-100"
+          ]
+        },
+        {
+          "name": "backdrop-saturate",
+          "desc": "Độ bão hòa nền phía sau.",
+          "class_examples": [
+            "backdrop-saturate-0",
+            "backdrop-saturate-50",
+            "backdrop-saturate-100",
+            "backdrop-saturate-150",
+            "backdrop-saturate-200"
+          ]
+        },
+        {
+          "name": "backdrop-sepia",
+          "desc": "Hiệu ứng sepia trên nền phía sau.",
+          "class_examples": [
+            "backdrop-sepia",
+            "backdrop-sepia-0"
+          ]
+        }
+      ]
+    }
+  ]
+}
